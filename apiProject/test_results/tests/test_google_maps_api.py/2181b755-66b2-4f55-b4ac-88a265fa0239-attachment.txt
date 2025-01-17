@@ -1,0 +1,37 @@
+Метод POST
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"32b136e2d228767a12f2659ebfd73a84","scope":"APP","reference":"f02dfb331e6d58a2f5a9a450d70eb31bf02dfb331e6d58a2f5a9a450d70eb31b","id":"f02dfb331e6d58a2f5a9a450d70eb31b"}
+Успешно! Cтатус-код = 200
+Все обязательные поля присутствуют.
+Поле 'status' корректно!
+Метод Get после POST
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=32b136e2d228767a12f2659ebfd73a84
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Успешно! Cтатус-код = 200
+Все обязательные поля присутствуют.
+Поле 'address' корректно!
+Метод PUT
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Успешно! Cтатус-код = 200
+Все обязательные поля присутствуют.
+Поле 'msg' корректно!
+Метод Get после PUT
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=32b136e2d228767a12f2659ebfd73a84
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"100 Lenina street, RU","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Успешно! Cтатус-код = 200
+Все обязательные поля присутствуют.
+Поле 'address' корректно!
+Метод Delete
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Успешно! Cтатус-код = 200
+Все обязательные поля присутствуют.
+Поле 'status' корректно!
+Метод GET после DELETE
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=32b136e2d228767a12f2659ebfd73a84
+{"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Успешно! Cтатус-код = 404
+Все обязательные поля присутствуют.
+Слово failed присутствует в поле msg!
+Тестирование Создание, изменения и удаление новой локаций прошло успешно!!!
